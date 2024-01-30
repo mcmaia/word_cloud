@@ -1,0 +1,6 @@
+config/
+.env
+venv/
+token.json
+teste.py
+word_cloud.ipynb
