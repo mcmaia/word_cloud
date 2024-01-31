@@ -3,4 +3,8 @@ config/
 venv/
 token.json
 teste.py
-word_cloud.ipynb
+__pycache__
+out
+source
+word_clouds.docx
+word_clouds.html

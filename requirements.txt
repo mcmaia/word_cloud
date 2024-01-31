@@ -1,8 +1,14 @@
 apify_client==1.6.2
 apify_shared==1.1.1
+comm==0.2.1
+contourpy==1.2.0
+matplotlib==3.8.2
+openpyxl==3.1.2
 pandas==2.2.0
 psycopg2-binary==2.9.9
 pyarrow==15.0.0
+python-docx==1.1.0
 python-dotenv==1.0.1
 requests==2.31.0
 SQLAlchemy==2.0.25
+wordcloud==1.9.3

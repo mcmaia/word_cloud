@@ -38,3 +38,13 @@ class InstagramPost(Base):
     is_pinned = Column(Boolean)
     location_name = Column(String)
     location_id = Column(Float)
+
+
+class Insights(Base):
+    __tablename__ = 'insights'
+    
+    id = Column(Integer, primary_key=True)
+    username = Column(String(50), nullable=False)
+    common_words = Column(String)
+    unique_themes = Column(String)
+    word_cloud_path = Column(String)
