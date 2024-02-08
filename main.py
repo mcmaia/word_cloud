@@ -49,8 +49,8 @@ print(df.dtypes)
 # Convert 'timestamp' to datetime format, if not already
 df['timestamp'] = pd.to_datetime(df['timestamp'])
 
-# Handle 'isPinned' column if it contains mixed types (True/False/None)
-df['isPinned'] = df['isPinned'].apply(lambda x: True if x == 'True' else False if x == 'False' else None)
+# # Handle 'isPinned' column if it contains mixed types (True/False/None)
+# df['isPinned'] = df['isPinned'].apply(lambda x: True if x == 'True' else False if x == 'False' else None)
 # Rename the 'inputUrl' column to 'input_url' to match the database schema
 df.rename(columns={
     'inputUrl': 'input_url',
@@ -82,4 +82,4 @@ inplace=True
 )
 # Now you can attempt to insert the DataFrame into the PostgreSQL table again
 df = df.drop_duplicates(subset=['id'])
-df.to_sql('instagram_posts_mage', engine, if_exists='append', index=False)
+df.to_sql('instagram_posts_quilombo', engine, if_exists='append', index=False)
